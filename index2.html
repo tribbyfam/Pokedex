@@ -6,6 +6,7 @@
       <!--Import materialize.css-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
       <link rel="stylesheet" href="css/main.css">
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
@@ -69,7 +70,7 @@
         <div class="parallax"><img src="images/background6.jpg"> -->
         <h2>Pokemon template</h2>
           <div class="row">
-            <div class="col s12 m10">
+            <div class="col s12 m10 red lighten-2">
               <div class="card horizontal">
                 <div class="card-image">
                   <img id="poke-cards" class="materialboxed" src="images/pokemon-card-back_600.jpg">
@@ -81,14 +82,50 @@
                     <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
                   </ul>
                 </div>
-                <ul class="collection with-header">
-                  <li class="collection-item"><h5>Pokemon's Name here</h5></li>
-                  <li class="collection-item">Celebi is a pokemon that will be here evantually</li>
-                  <li class="collection-item">Primarina</li>
-                  <li class="collection-item">Infernape</li>
-                </ul>
+                <h4 id="poke-name"></h4>
+                <table class="responsive-table">
+                  <thead>
+                    <tr>
+                      <th>Statistic</th>
+                      <th>Value</th>
+                    </tr>
+                  </thead>
+          
+                  <tbody>
+                    <tr>
+                      <td>PH :</td>
+                      <td id="poke-hp"></td>
+                    </tr>
+                    <tr>
+                      <td>Attack points :</td>
+                      <td id="poke-attack"></td>
+                    </tr>
+                    <tr>
+                      <td>Defence points :</td>
+                      <td id="poke-defence"></td>
+                    </tr>
+                    <tr>
+                      <td>Abilities :</td>
+                      <td id="poke-abilities"></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <!-- <ul class="collection with-header">
+                  <li id="poke-name"class="collection-item"><h5></h5></li>
+                  <li id="poke-hp" class="collection-item"></li>
+                  <li id="poke-attack" class="collection-item"></li>
+                  <li id="poke-defence" class="collection-item"></li>
+                  <li id="poke-abilities" class="collection-item"></li>
+                  <ul class="collapsible">
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                  </ul>
+                </ul>  -->
               </div>
-            <div>
+            </div>
           </div>
         </div>
       </div> <!--paralax container2-->
@@ -101,19 +138,19 @@
           <div class="slider">
             <ul class="slides">
               <li>
-                <img src="images/celebi.png"> <!-- random image -->
+                <img src="images/Celebi.jpg">
                 <div class="caption center-align">
                   <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
                 </div>
               </li>
               <li>
-                <img src="images/founder.jpg"> <!-- random image -->
+                <img src="images/founder.jpg"> 
                 <div class="caption center-align">
                   <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
                 </div>
               </li>
               <li>
-                <img src="images/celebi.png"> <!-- random image -->
+                <img src="images/Celebi.jpg"> 
                 <div class="caption center-align">
                   <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
                 </div>
@@ -153,19 +190,19 @@
           <div class="slider">
             <ul class="slides">
               <li>
-                <img src="image2.jpeg"> <!-- random image -->
+                <img src="images/infernape.jpg"> <!-- random image -->
                 <div class="caption center-align">
                   <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
                 </div>
               </li>
               <li>
-                <img src="image3.jpeg"> <!-- random image -->
+                <img src="images/poke-ad3.png"> <!-- random image -->
                 <div class="caption center-align">
                   <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
                 </div>
               </li>
               <li>
-                <img src="image2.jpeg"> <!-- random image -->
+                <img src="images/primarina.jpg"> <!-- random image -->
                 <div class="caption center-align">
                   <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
                 </div>
