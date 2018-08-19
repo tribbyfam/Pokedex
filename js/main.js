@@ -35,7 +35,7 @@ let pokeFirstName = document.getElementById("poke-name");
 let pokeHpStats = document.getElementById("poke-hp");
 let pokeAttackStats = document.getElementById("poke-attack");
 let pokeDefenceStats = document.getElementById("poke-defence");
-
+let pokeAbilities = document.getElementById("poke-abilities");
 
 axios.get('http://fizal.me/pokeapi/api/251.json')
 .then(function (response) {
@@ -45,13 +45,17 @@ axios.get('http://fizal.me/pokeapi/api/251.json')
   let myHp = res.stats[5].base_stat;
   let myAttack = res.stats[4].base_stat;
   let myDefence = res.stats[3].base_stat;
-
+  let myAbilities = res.abilities[0].ability.name;
+  
+  // for (let i=0; i<myAbilities.length; i++){
+  //   console.log(myAbilities[i]);
+  // }
 
   pokeFirstName.innerHTML = `Name: ${myPokeName}`;
-  pokeHpStats.innerHTML = `PH points:              ${myHp}`;
-  pokeAttackStats.innerHTML = `Attack points:      ${myHp}`;
-  pokeDefenceStats.innerHTML = `Defence points:    ${myHp}`;
-
+  pokeHpStats.innerHTML = `${myHp}`;
+  pokeAttackStats.innerHTML = `${myHp}`;
+  pokeDefenceStats.innerHTML = `${myHp}`;
+  pokeAbilities.innerHTML = `${myAbilities}`;
 
 })
 .catch(function (error) {
