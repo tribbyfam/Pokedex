@@ -6,7 +6,7 @@
       <!--Import materialize.css-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
       <link rel="stylesheet" href="css/main.css">
-      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+ 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
@@ -62,7 +62,7 @@
             <div class="col s12 m4">
               <div class="card grey lighten-2">
                 <div class="card-image">
-                  <img id="poke-cards" class="materialboxed" src="images/pokemon-card-back_600.jpg">
+                  <img id="poke-cards" class="materialboxed change" src="images/pokemon-card-back_600.jpg">
                   <ul class="pagination">
                     <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
                     <li id="251" class="active"><a href="#!">1</a></li>
@@ -79,26 +79,26 @@
                 <thead>
                   <tr>
                     <th>Statistic</th>
-                    <th>Value</th>
+                    <th class="change">Value</th>
                   </tr>
                 </thead>
         
                 <tbody>
                   <tr>
                     <td>PH :</td>
-                    <td id="poke-hp"></td>
+                    <td class="change" id="poke-hp"></td>
                   </tr>
                   <tr>
                     <td>Attack points :</td>
-                    <td id="poke-attack"></td>
+                    <td class="change" id="poke-attack"></td>
                   </tr>
                   <tr>
                     <td>Defence points :</td>
-                    <td id="poke-defence"></td>
+                    <td class="change" id="poke-defence"></td>
                   </tr>
                   <tr>
                     <td>Abilities :</td>
-                    <td id="poke-abilities"></td>
+                    <td class="change" id="poke-abilities"></td>
                   </tr>
                 </tbody>
               </table>
@@ -241,6 +241,7 @@
       
 
       <!--JavaScript at end of body for optimized loading-->
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
       <script src="js/main.js"></script>
    

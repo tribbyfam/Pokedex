@@ -26,28 +26,61 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 class Trainer{
-  constructor(){
-    this.all=[];
+  constructor(firstName="Blue", lastName="Catchum"){
+    this.firstName=firstName;
+    this.lastName= lastName;
+    this.data =[];
   }
 
   add(pokemon){
-    this.all.push(pokemon)
+    this.data.push(pokemon)
   }
   get(name){
-    return this.all.find((element) =>{
+    return this.data.find((element) =>{
       return element.myPokeName == name
     })
   }
 }
 
 class Pokemon {
-  constructor(name, ph, attack, deffend, abilities){
+  constructor(name, hp, attack, deffend, abilities){
     this.name = name;
-    this.ph = ph;
+    this.hp = hp;
     this.attack = attack;
     this.deffend = deffend;
     this.abilities = abilities;
   }
+  grab (params) {
+    let pokeName = document.getElementById("poke-name");
+  let pokeHpStats = document.getElementById("poke-hp");
+  let pokeAttackStats = document.getElementById("poke-attack");
+  let pokeDefenceStats = document.getElementById("poke-defence");
+  let pokeAbilities = document.getElementById("poke-abilities");
+  let pokeImages = document.getElementById("poke-cards");
+  let pic730 = document.getElementById("730");
+  pokeImages.setAttribute("src", myPic)
+
+  let newArray = [];
+  for (let i=0; i<res.abilities.length; i++) {
+    newArray.push(res.abilities[i].ability.name)
+  }
+  let myAbilities = newArray;
+  trainer.add(pokemon251);
+ 
+
+  this.name = `${name}`;
+  this.hp = `${hp}`;
+  this.attack = `${attack}`;
+  this.defence = `${defence}`;
+  this.abilities = `${abilities}`;
+  console.log(myPic)
+
+  trainer.add(pokemon251);
+  console.log(trainer);
+  }
+  
+  
+
 }
   
 let trainer = new Trainer();
@@ -55,13 +88,6 @@ let trainer = new Trainer();
 
 // api calls requesting data for Celebi
 
-let pokeName251 = document.getElementById("poke-name");
-let pokeHpStats251 = document.getElementById("poke-hp");
-let pokeAttackStats251 = document.getElementById("poke-attack");
-let pokeDefenceStats251 = document.getElementById("poke-defence");
-let pokeAbilities251 = document.getElementById("poke-abilities");
-let pokeImages = document.getElementById("poke-cards");
-let pic730 = document.getElementById("730");
 
 // pokeImages.addEventListener("click", function(){
 //   pokeImages.src = function change(){
@@ -80,27 +106,15 @@ let pic730 = document.getElementById("730");
   let myAttack = res.stats[4].base_stat;
   let myDefence = res.stats[3].base_stat;
   let myPic = res.sprites.front_default;
-  pokeImages.setAttribute("src", myPic)
-  console.log(myPic)
-
-  let newArray = [];
+  
+ let newArray = [];
   for (let i=0; i<res.abilities.length; i++) {
     newArray.push(res.abilities[i].ability.name)
   }
   let myAbilities = newArray;
- 
- 
-  pokeName251.innerHTML = `Name: ${myPokeName}`;
-  pokeHpStats251.innerHTML = `${myHp}`;
-  pokeAttackStats251.innerHTML = `${myAttack}`;
-  pokeDefenceStats251.innerHTML = `${myDefence}`;
-  pokeAbilities251.innerHTML = `${myAbilities}`;
-
-
   let pokemon251 = new Pokemon( myPokeName,myHp,myAttack,myDefence,myAbilities)
 
-  trainer.add(pokemon251);
-  console.log(trainer);
+ 
 
 })
 
@@ -113,6 +127,9 @@ let pic730 = document.getElementById("730");
 
 axios.get('http://fizal.me/pokeapi/api/730.json')
 .then(function (response) {
+
+
+
   let res = response.data;
   let myPokeName = res.name;
   let myHp = res.stats[5].base_stat;
@@ -127,18 +144,13 @@ axios.get('http://fizal.me/pokeapi/api/730.json')
     newArray.push(res.abilities[i].ability.name)
   }
   let myAbilities = newArray;
- 
-  // pokeName730.innerHTML = `Name: ${myPokeName}`;
-  // pokeHpStats730.innerHTML = `${myHp}`;
-  // pokeAttackStats730.innerHTML = `${myAttack}`;
-  // pokeDefenceStats730.innerHTML = `${myDefence}`;
-  // pokeAbilities730.innerHTML = `${myAbilities}`;
 
   let pokemon730 = new Pokemon(myPokeName,myHp,myAttack,myDefence,myAbilities)
 
   trainer.add(pokemon730);
  
 
+  console.log(response,myPokeName,myAbilities);
 })
 .catch(function (error) {
   console.log(error);
@@ -167,19 +179,20 @@ axios.get('http://fizal.me/pokeapi/api/392.json')
   }
   let myAbilities = newArray;
  
- 
-  // pokeName392.innerHTML = `Name: ${myPokeName}`;
-  // pokeHpStats392.innerHTML = `${myHp}`;
-  // pokeAttackStats392.innerHTML = `${myAttack}`;
-  // pokeDefenceStats392.innerHTML = `${myDefence}`;
-  // pokeAbilities392.innerHTML = `${myAbilities}`;
-
-
   let pokemon392 = new Pokemon( myPokeName,myHp,myAttack,myDefence,myAbilities)
 
   trainer.add(pokemon392);
+
 })
 
 .catch(function (error) {
   console.log(error);
 });
+
+// let tableValues = document.getElementsByClassName("change");
+// let tableValues = tableValues[0];
+//     tableValues.oncklick = function (){
+//       if(this.name === 'celebi'){
+
+//       }
+//     }
