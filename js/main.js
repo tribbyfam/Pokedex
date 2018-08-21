@@ -61,7 +61,6 @@ class Pokemon {
   let pokeImages = document.getElementById("poke-cards");
   
   pokeImages.setAttribute("src", this.picture)
-    console.log(this.abilities);
  
 
   pokeName.innerHTL = `${this.name}`;
@@ -95,6 +94,11 @@ let trainer = new Trainer();
   }
   let myAbilities = newArray;
   let pokemon251 = new Pokemon( myPokeName,myHp,myAttack,myDefence,myAbilities, myPic)
+  document.getElementById("p251").addEventListener("click", pokemon251.grab);
+  document.getElementById("p251").addEventListener("click", function (){
+    trainer.get('celebi').grab()
+  });
+
 
   trainer.add(pokemon251);
   pokemon251.grab();
@@ -124,13 +128,17 @@ axios.get('http://fizal.me/pokeapi/api/730.json')
   }
   let myAbilities = newArray;
 
-  let pokemon730 = new Pokemon(myPokeName,myHp,myAttack,myDefence,myAbilities)
-
+  let pokemon730 = new Pokemon(myPokeName,myHp,myAttack,myDefence,myAbilities,myPic)
+  console.log(pokemon730);
+  console.log(res);
   trainer.add(pokemon730);
  
+  document.getElementById("p730").addEventListener("click", function (){
+    trainer.get('primarina').grab()
+  });
 
-  console.log(response,myPokeName,myAbilities);
 })
+
 .catch(function (error) {
   console.log(error);
 });
@@ -157,7 +165,11 @@ axios.get('http://fizal.me/pokeapi/api/392.json')
   }
   let myAbilities = newArray;
  
-  let pokemon392 = new Pokemon( myPokeName,myHp,myAttack,myDefence,myAbilities)
+  let pokemon392 = new Pokemon( myPokeName,myHp,myAttack,myDefence,myAbilities,myPic);
+
+  document.getElementById("p392").addEventListener("click", function (){
+    trainer.get('infernape').grab()
+  });
 
   trainer.add(pokemon392);
 
