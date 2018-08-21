@@ -1,0 +1,58 @@
+@import url(./pokemon-font/Pokemon\ Hollow.ttf);
+
+@font-face{
+font-family: 'myfonts';
+src: url(./pokemon-font/Pokemon-Hollow.ttf)
+}
+
+%images-size {
+  height: 300px;
+  width: 200px;
+}
+
+%myfont-size {
+  font-size: 14px;
+} 
+
+body{
+  background-color: rgb(117, 16, 11);
+  margin: 0;
+  font-family: 'myfonts', Fallback, sans-serif;
+}
+
+.bg-color{
+  background-color: rgb(41,41,41);
+}
+
+.nav-font{
+  @extend %myfont-size;
+}
+
+h1{
+  font-family: 'myfonts';
+}
+
+#heroimg{
+  width: 100%;
+}
+.container{
+  height: 600px;
+}
+
+#poke-cards, #girl{
+  @extend %images-size;
+}
+
+.card-panel{
+  background-color: rgb(230, 174, 75);
+}
+
+.space{
+  margin: 50px;
+}
+
+#founder{
+  height: 350px;
+  width: 230px;
+  position: center;
+}
