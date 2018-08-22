@@ -19,9 +19,63 @@ body{
   margin: 0;
   font-family: 'myfonts', Fallback, sans-serif;
 }
+.hero{
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(../images/background6.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero h1{
+  font-size: 5em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: black;
+  font-weight: bold;
+}
+
+.hero h3{
+  @extend %myfont-size;
+  color: black;
+}
 
 .bg-color{
   background-color: rgb(41,41,41);
+}
+
+.bkgr-img{
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(../images/background4.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bkgr-img2{
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(../images/background5.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .nav-font{
@@ -64,30 +118,4 @@ h1{
   height: 350px;
   width: 230px;
   position: center;
-}
-.hero{
-  width: 100vw;
-  height: 40vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-image: url(../images/background6.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.hero h1{
-  font-size: 5em;
-  margin-top: 0;
-  margin-bottom: 0.5em;
-  color: black;
-  font-weight: bold;
-}
-
-.hero h3{
-  @extend %myfont-size;
-  color: black;
 }
