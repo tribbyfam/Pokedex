@@ -1,7 +1,7 @@
 @import url(./pokemon-font/Pokemon\ Hollow.ttf);
 @font-face {
   font-family: 'myfonts';
-  src: url(./pokemon-font/Pokemon-Hollow.ttf); }
+  src: url(../pokemon-font/Pokemon-Solid.ttf); }
 #poke-cards, #girl, .pimg {
   height: 200px;
   width: 200px; }
@@ -9,10 +9,13 @@
 .hero h3, .nav-font {
   font-size: 1.4em; }
 
+.hero h1, .hero h3, h1 {
+  color: #131338; }
+
 body {
-  background-color: #75100b;
+  background-color: #691102;
   margin: 0;
-  font-family: 'myfonts', Fallback, sans-serif; }
+  font-family: 'Wendy One', sans-serif; }
 
 .hero {
   width: 100vw;
@@ -31,14 +34,16 @@ body {
   font-size: 5em;
   margin-top: 0;
   margin-bottom: 0.5em;
-  color: black;
   font-weight: bold; }
 
 .hero h3 {
-  color: black; }
+  font-family: 'myfonts'; }
 
 .bg-color {
   background-color: #292929; }
+
+h1 {
+  font-family: 'myfonts'; }
 
 .bkgr-img {
   width: 100vw;
@@ -75,6 +80,9 @@ h1 {
 .card-panel {
   background-color: #e6ae4b; }
 
+.pimg {
+  font-family: "myfonts"; }
+
 .trimg {
   height: 300px; }
 
@@ -83,7 +91,6 @@ h1 {
 
 #founder {
   height: 350px;
-  width: 230px;
-  position: center; }
+  width: 230px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -2,7 +2,7 @@
 
 @font-face{
 font-family: 'myfonts';
-src: url(./pokemon-font/Pokemon-Hollow.ttf)
+src: url(../pokemon-font/Pokemon-Solid.ttf)
 }
 
 %images-size {
@@ -14,10 +14,14 @@ src: url(./pokemon-font/Pokemon-Hollow.ttf)
   font-size: 1.4em;
 } 
 
+%blue-text {
+  color: rgb(19, 19, 56);
+}
+
 body{
-  background-color: rgb(117, 16, 11);
+  background-color: rgb(105, 17, 2);
   margin: 0;
-  font-family: 'myfonts', Fallback, sans-serif;
+  font-family: 'Wendy One', sans-serif;
 }
 .hero{
   width: 100vw;
@@ -37,17 +41,26 @@ body{
   font-size: 5em;
   margin-top: 0;
   margin-bottom: 0.5em;
-  color: black;
+  @extend %blue-text;
   font-weight: bold;
 }
 
 .hero h3{
   @extend %myfont-size;
-  color: black;
+  font-family: 'myfonts';
+  @extend %blue-text;
+}
+.card-panel{
+
 }
 
 .bg-color{
   background-color: rgb(41,41,41);
+}
+
+h1{
+  @extend %blue-text;
+  font-family: 'myfonts';
 }
 
 .bkgr-img{
@@ -103,6 +116,7 @@ h1{
 
 .pimg{
 @extend %images-size;
+font-family: 'myfonts'
 }
 
 .trimg{
@@ -117,5 +131,5 @@ h1{
 #founder{
   height: 350px;
   width: 230px;
-  position: center;
+  
 }
