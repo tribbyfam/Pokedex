@@ -61,6 +61,7 @@ class Pokemon {
   let pokeAbilities = document.getElementById("poke-abilities");
   let pokeImages = document.getElementById("poke-cards");
   
+  
   pokeImages.setAttribute("src", this.picture)
  
 
@@ -173,6 +174,39 @@ axios.get('http://fizal.me/pokeapi/api/392.json')
   });
 
   trainer.add(pokemon392);
+
+})
+
+.catch(function (error) {
+  console.log(error);
+});
+
+let pokeImages = document.getElementById("p635");
+axios.get('http://fizal.me/pokeapi/api/635.json')
+.then(function (response) {
+  let res = response.data;
+  let myPokeName = res.name;
+  let myHp = res.stats[5].base_stat;
+  let myAttack = res.stats[4].base_stat;
+  let myDefence = res.stats[3].base_stat;
+  let myPic = res.sprites.front_default;
+
+
+  let newArray = [];
+  for (let i=0; i<res.abilities.length; i++) {
+    newArray.push(res.abilities[i].ability.name)
+  }
+  let myAbilities = newArray;
+ 
+  let pokemon635 = new Pokemon( myPokeName,myHp,myAttack,myDefence,myAbilities,myPic);
+
+  document.getElementById("p635").addEventListener("click", function (){
+    let myDragon = document.getElementById("p635i");
+    myDragon.setAttribute("src",myPic);
+
+  });
+
+  trainer.add(pokemon635);
 
 })
 
