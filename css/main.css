@@ -2,7 +2,7 @@
 @font-face {
   font-family: 'myfonts';
   src: url(./pokemon-font/Pokemon-Hollow.ttf); }
-#poke-cards, #girl {
+#poke-cards, #girl, .pimg {
   height: 200px;
   width: 200px; }
 
@@ -23,11 +23,11 @@ h1 {
 #heroimg {
   width: 100%; }
 
-.container {
-  height: 500px; }
-
 .card-panel {
   background-color: #e6ae4b; }
+
+.trimg {
+  height: 300px; }
 
 .space {
   margin: 50px; }
@@ -39,7 +39,7 @@ h1 {
 
 .hero {
   width: 100vw;
-  height: 50vh;
+  height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;

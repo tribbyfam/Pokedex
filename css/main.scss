@@ -14,10 +14,6 @@ src: url(./pokemon-font/Pokemon-Hollow.ttf)
   font-size: 1.4em;
 } 
 
-%color-red {
-
-}
-
 body{
   background-color: rgb(117, 16, 11);
   margin: 0;
@@ -39,9 +35,9 @@ h1{
 #heroimg{
   width: 100%;
 }
-.container{
-  height: 500px;
-}
+// .container{
+//   height: 500px;
+// }
 
 #poke-cards, #girl{
   @extend %images-size;
@@ -49,6 +45,15 @@ h1{
 
 .card-panel{
   background-color: rgb(230, 174, 75);
+}
+
+.pimg{
+@extend %images-size;
+}
+
+.trimg{
+  height: 300px;
+
 }
 
 .space{
@@ -62,7 +67,7 @@ h1{
 }
 .hero{
   width: 100vw;
-  height: 50vh;
+  height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,4 +1,5 @@
 // all initializers for materialize
+M.AutoInit();
 document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.sidenav');
   var instances = M.Sidenav.init(elems, 'isFixed');
@@ -66,7 +67,7 @@ class Pokemon {
   pokeName.innerHTL = `${this.name}`;
   pokeHpStats.innerHTML = `${this.hp}`;
   pokeAttackStats.innerHTML = `${this.attack}`;
-  pokeDefenceStats.innerHTML = `${this.defence}`;
+  pokeDefenceStats.innerHTML = `${this.defend}`;
   pokeAbilities.innerHTML = `${this.abilities}`;
 
   }
