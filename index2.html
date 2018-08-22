@@ -13,7 +13,7 @@
 
     <body>
       <nav class="navbar-fixed grey darken-3">
-        <div class="nav-wrapper bg-color">
+        <div class="container nav-wrapper bg-color">
           <a href="#!" class="brand-logo"><img src="images/logo-pokemon-79x45.png"></a>
           <ul class="right hide-on-med-and-down">
             <li class="nav-font"><a href="#">Home</a></li>
@@ -57,12 +57,12 @@
       <!-- This is second page with my Pokedex cards -->
       <!-- <div class="parallax-container">-->
         <div class="container">
-          <h4 id="poke-name"></h4>
-          <div class="row">
+          <div class="card row">
             <div class="col s12 m4">
               <div class="card grey lighten-2">
                 <div class="card-image">
                   <img id="poke-cards" class="materialboxed change" src="images/pokemon-card-back_600.jpg">
+                  <span class="card-title back-text" id="poke-name"></span>
                   <ul class="pagination">
                     <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
                     <li id="p251" class="active"><a href="#!">1</a></li>
@@ -74,7 +74,7 @@
               </div>
             </div>
 
-            <div class="col s12 m6 grey lighten-2">             
+            <div class="col s12 m6 l5 greylighten-2 card-content">             
               <table class="responsive-table">
                 <thead>
                   <tr>
@@ -93,7 +93,7 @@
                     <td class="change" id="poke-attack"></td>
                   </tr>
                   <tr>
-                    <td>Defence points :</td>
+                    <td>Defense points :</td>
                     <td class="change" id="poke-defence"></td>
                   </tr>
                   <tr>
@@ -108,53 +108,27 @@
       <br> <br> <br>
     
       <!-- Third page Pokemon progression -->
-    <div class="row">
+    <div class="row container">
       <div class="col s12 m4">
         <div class="card-panel grey lighten-2 z-depth-3">
-          <div class="slider">
-            <ul class="slides">
+          <div class="slider card">
+            <ul class="slides card-title">
               <li>
                 <img src="images/Celebi.jpg">
                 <div class="caption center-align">
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                  <h5 class="light grey-text text-lighten-3">Celebi.</h5>
                 </div>
               </li>
               <li>
-                <img src="images/founder.jpg"> 
+                <img src="images/celebi2.jpg"> 
                 <div class="caption center-align">
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                  <h5 class="light grey-text text-lighten-3">Celebi.</h5>
                 </div>
               </li>
               <li>
-                <img src="images/Celebi.jpg"> 
+                <img src="images/celebi3.jpg"> 
                 <div class="caption center-align">
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m4">
-        <div class="card-panel grey lighten-2 z-depth-3">
-          <div class="slider">
-            <ul class="slides">
-              <li>
-                <img src="images/Poke-Ball.png"> <!-- random image -->
-                <div class="caption center-align">
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                </div>
-              </li>
-              <li>
-                <img src="images/background4.jpg"> <!-- random image -->
-                <div class="caption center-align">
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                </div>
-              </li>
-              <li>
-                <img src="images/background3.png"> <!-- random image -->
-                <div class="caption center-align">
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                  <h5 class="light grey-text text-lighten-3">Celebi</h5>
                 </div>
               </li>
             </ul>
@@ -163,24 +137,50 @@
       </div>
       <div class="col s12 m4">
         <div class="card-panel grey lighten-2 z-depth-3">
-          <div class="slider">
-            <ul class="slides">
+          <div class="slider card">
+            <ul class="slides card-title">
               <li>
-                <img src="images/infernape.jpg"> <!-- random image -->
+                <img src="images/primarinaS.jpg"> <!-- random image -->
                 <div class="caption center-align">
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                  <h5 class="light grey-text text-lighten-3">Primarina.</h5>
                 </div>
               </li>
               <li>
-                <img src="images/poke-ad3.png"> <!-- random image -->
+                <img src="images/primarinaM.jpg"> <!-- random image -->
                 <div class="caption center-align">
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                  <h5 class="light grey-text text-lighten-3">Primarina.</h5>
                 </div>
               </li>
               <li>
                 <img src="images/primarina.jpg"> <!-- random image -->
                 <div class="caption center-align">
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                  <h5 class="light grey-text text-lighten-3">Primarina.</h5>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card-panel grey lighten-2 z-depth-3">
+          <div class="slider card">
+            <ul class="slides card-title">
+              <li>
+                <img src="images/infernape1.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                  <h5 class="light grey-text text-lighten-3">Infernape.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="images/infernape2.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                  <h5 class="light grey-text text-lighten-3">Infernape.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="images/infernape3.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                  <h5 class="light grey-text text-lighten-3">Infernape.</h5>
                 </div>
               </li>
             </ul>
