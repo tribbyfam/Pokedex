@@ -3,11 +3,11 @@
   font-family: 'myfonts';
   src: url(./pokemon-font/Pokemon-Hollow.ttf); }
 #poke-cards, #girl {
-  height: 300px;
+  height: 200px;
   width: 200px; }
 
-.nav-font {
-  font-size: 14px; }
+.nav-font, .hero h3 {
+  font-size: 1.4em; }
 
 body {
   background-color: #75100b;
@@ -24,7 +24,7 @@ h1 {
   width: 100%; }
 
 .container {
-  height: 600px; }
+  height: 500px; }
 
 .card-panel {
   background-color: #e6ae4b; }
@@ -36,5 +36,28 @@ h1 {
   height: 350px;
   width: 230px;
   position: center; }
+
+.hero {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(../images/background6.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.hero h1 {
+  font-size: 5em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: black;
+  font-weight: bold; }
+
+.hero h3 {
+  color: black; }
 
 /*# sourceMappingURL=main.css.map */
