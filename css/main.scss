@@ -5,7 +5,7 @@ font-family: 'myfonts';
 src: url(../pokemon-font/Pokemon-Solid.ttf)
 }
 
-%images-size {
+%myimages-size {
   height: 200px;
   width: 200px;
 }
@@ -14,12 +14,16 @@ src: url(../pokemon-font/Pokemon-Solid.ttf)
   font-size: 1.4em;
 } 
 
-%blue-text {
+%myblue-text {
   color: rgb(19, 19, 56);
 }
 
-body{
+%mybackground-color {
   background-color: rgb(105, 17, 2);
+}
+
+body{
+  @extend %mybackground-color;
   margin: 0;
   font-family: 'Wendy One', sans-serif;
 }
@@ -41,14 +45,14 @@ body{
   font-size: 5em;
   margin-top: 0;
   margin-bottom: 0.5em;
-  @extend %blue-text;
+  @extend %myblue-text;
   font-weight: bold;
 }
 
 .hero h3{
   @extend %myfont-size;
   font-family: 'myfonts';
-  @extend %blue-text;
+  @extend %myblue-text;
 }
 .card-panel{
 
@@ -59,7 +63,7 @@ body{
 }
 
 h1{
-  @extend %blue-text;
+  @extend %myblue-text;
   font-family: 'myfonts';
 }
 
@@ -107,7 +111,7 @@ h1{
 // }
 
 #poke-cards, #girl{
-  @extend %images-size;
+  @extend %myimages-size;
 }
 
 .card-panel{
@@ -115,7 +119,7 @@ h1{
 }
 
 .pimg{
-@extend %images-size;
+@extend %myimages-size;
 font-family: 'myfonts'
 }
 
@@ -130,6 +134,13 @@ font-family: 'myfonts'
 
 #founder{
   height: 350px;
-  width: 230px;
-  
+  width: 230px; 
 }
+
+footer{
+  font-family: 'Roboto', sans-serif;
+}
+
+#icon{
+  @extend %mybackground-color;
+};

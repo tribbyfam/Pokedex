@@ -12,8 +12,10 @@
 .hero h1, .hero h3, h1 {
   color: #131338; }
 
+body, #icon {
+  background-color: #691102; }
+
 body {
-  background-color: #691102;
   margin: 0;
   font-family: 'Wendy One', sans-serif; }
 
@@ -92,5 +94,8 @@ h1 {
 #founder {
   height: 350px;
   width: 230px; }
+
+footer {
+  font-family: 'Roboto', sans-serif; }
 
 /*# sourceMappingURL=main.css.map */
