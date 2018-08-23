@@ -2,17 +2,17 @@
 @font-face {
   font-family: 'myfonts';
   src: url(../pokemon-font/Pokemon-Solid.ttf); }
-#poke-cards, #girl, .pimg {
+#poke-cards, #girl {
   height: 200px;
   width: 200px; }
 
-.hero h3, .nav-font {
+.hero h3, #firstpagetext, .nav-font {
   font-size: 1.4em; }
 
-.hero h1, .hero h3, h1 {
+.hero h1, .hero h3, #firstpagetext, h1 {
   color: #131338; }
 
-body, #icon {
+body, .space, #icon {
   background-color: #691102; }
 
 body {
@@ -38,7 +38,7 @@ body {
   margin-bottom: 0.5em;
   font-weight: bold; }
 
-.hero h3 {
+.hero h3, #firstpagetext {
   font-family: 'myfonts'; }
 
 .bg-color {
@@ -79,17 +79,8 @@ h1 {
 #heroimg {
   width: 100%; }
 
-.card-panel {
-  background-color: #e6ae4b; }
-
-.pimg {
-  font-family: "myfonts"; }
-
 .trimg {
   height: 300px; }
-
-.space {
-  margin: 50px; }
 
 #founder {
   height: 350px;

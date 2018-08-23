@@ -49,13 +49,10 @@ body{
   font-weight: bold;
 }
 
-.hero h3{
+.hero h3, #firstpagetext{
   @extend %myfont-size;
   font-family: 'myfonts';
   @extend %myblue-text;
-}
-.card-panel{
-
 }
 
 .bg-color{
@@ -114,22 +111,13 @@ h1{
   @extend %myimages-size;
 }
 
-.card-panel{
-  background-color: rgb(230, 174, 75);
-}
-
-.pimg{
-@extend %myimages-size;
-font-family: 'myfonts'
-}
-
 .trimg{
   height: 300px;
 
 }
 
 .space{
-  margin: 50px;
+  @extend %mybackground-color;
 }
 
 #founder{
