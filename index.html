@@ -1,43 +1,57 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-      <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
-      <link rel="stylesheet" href="css/main.css">
- 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+<html>
 
-    <body>
-      <nav class="nav-fixed grey darken-3 transparent">
-        <div class="container nav-wrapper nav-transparent">
-          <a href="#!" class="brand-logo"><img src="images/logo-pokemon-79x45.png"></a>
-          <ul class="right hide-on-med-and-down">
-            <li class="active">Home</li>
-            <li><a href="#p2">my Deck</a></li>
-            <li><a href="#p3">Poke Evolve</a></li>
-            <li><a href="#p4">History</a></li>
-            <li><a href="#p5">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <section class="slider hero" id="p1">
-        <div class="hero-inner">
-          <h1>Blue A. Kentchum's <br> Pokedex</h1>
-          <h3>Get to know my pokemom</h3>
-        </div>
-      </section>
-      <br> <br>
-          
-        <!-- GRID 6 BY 6 FOR GIRL AND NAME -->
-      <!-- <div class="container"> -->
-        <!-- <h4>Blue A. Khaleesi</h4> -->
-        <!-- <div class="container">
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <nav class="nav-fixed grey darken-3 transparent">
+    <div class="container nav-wrapper nav-transparent">
+      <a href="#!" class="brand-logo">
+        <img src="images/logo-pokemon-79x45.png">
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li class="active">Home</li>
+        <li>
+          <a href="#p2">my Deck</a>
+        </li>
+        <li>
+          <a href="#p3">Poke Evolve</a>
+        </li>
+        <li>
+          <a href="#p4">History</a>
+        </li>
+        <li>
+          <a href="#p5">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section class="slider hero" id="p1">
+    <div class="hero-inner">
+      <h1>Blue A. Kentchum's
+        <br> Pokedex</h1>
+      <h3>Get to know my pokemom</h3>
+    </div>
+  </section>
+  <br>
+  <br>
+
+  <!-- GRID 6 BY 6 FOR GIRL AND NAME -->
+  <!-- <div class="container"> -->
+  <!-- <h4>Blue A. Khaleesi</h4> -->
+  <!-- <div class="container">
           <div>
             <div class="container">
               <div class="carousel carousel-slider">
@@ -48,243 +62,278 @@
           </div>
         </div>
       </div> -->
+  <div class="container" id="p1">
+    <div class="row">
+      <h4 class="center white-text">I will catch them all</h4>
+      <div class="col s12 m4 offset-m4">
+        <div class="card-panel">
+          <img id="girl" src="images/pokemon-trainerN.png" alt="girl pokemon trainer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- This is second page with my Pokedex cards -->
+
+  <div class="bkgr-img">
+    <div class="container">
+      <div class="card row" id="p2">
+        <div class="col s12 m4">
+          <div class="card grey lighten-2">
+            <div class="card-image">
+              <img id="poke-cards" class="materialboxed change" src="images/pokemon-card-back_600.jpg">
+              <span class="card-title back-text" id="poke-name"></span>
+              <ul class="pagination">
+                <li id="p251" class="active grey pag">
+                  <a href="#!">1</a>
+                </li>
+                <li id="p730" class="waves-effect pag">
+                  <a href="#!">2</a>
+                </li>
+                <li id="p392" class="waves-effect pag">
+                  <a href="#!">3</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6 grey lighten-2 card-content">
+          <table class="responsive-table offset-m2">
+            <thead>
+              <tr>
+                <th class="active">Statistic</th>
+                <th class="change active">Value</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>HP :</td>
+                <td class="change" id="poke-hp"></td>
+              </tr>
+              <tr>
+                <td>Attack points :</td>
+                <td class="change" id="poke-attack"></td>
+              </tr>
+              <tr>
+                <td>Defense points :</td>
+                <td class="change" id="poke-defence"></td>
+              </tr>
+              <tr>
+                <td>Abilities :</td>
+                <td class="change" id="poke-abilities"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <a id="p635">
+          <button class="btn grey darken-3 waves-effect center waves-light">My Dragon</button>
+        </a>
+        <img id="p635i" alt="">
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <!-- Third page Pokemon Evolution -->
+  <div class="row container" id="p3">
+    <div class="col s12 m4">
+      <div class="card-panel grey lighten-2 z-depth-3">
+        <div class="slider card">
+          <ul class="slides card-title">
+            <li>
+              <img class="responsive-img" src="images/Celebi.jpg">
+              <div class="caption center-align">
+                <h5 class="light black-text">Celebi.</h5>
+              </div>
+            </li>
+            <li>
+              <img class="responsive-img" src="images/celebi2.jpg">
+              <div class="caption center-align">
+                <h5 class="light black-text">Celebi.</h5>
+              </div>
+            </li>
+            <li>
+              <img class="responsive-img" src="images/celebi3.jpg">
+              <div class="caption center-align">
+                <h5 class="light black-text">Celebi</h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+      <div class="card-panel grey lighten-2 z-depth-3">
+        <div class="slider card">
+          <ul class="slides card-title">
+            <li>
+              <img class="responsive-img" src="images/primarinaS.jpg">
+              <div class="caption center-align">
+                <h5 class="light black-text">Primarina.</h5>
+              </div>
+            </li>
+            <li>
+              <img class="responsive-img" src="images/primarinaM.jpg">
+              <div class="caption center-align">
+                <h5 class="light black-text">Primarina.</h5>
+              </div>
+            </li>
+            <li>
+              <img class="responsive-img" src="images/primarina.jpg">
+              <div class="caption center-align">
+                <h5 class="light black-text">Primarina.</h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+      <div class="card-panel grey lighten-2 z-depth-3">
+        <div class="slider card">
+          <ul class="slides card-title">
+            <li>
+              <img class="responsive-img" src="images/infernape1.jpg">
+              <div class="caption center-align">
+                <h5 class="light black-text">Infernape.</h5>
+              </div>
+            </li>
+            <li>
+              <img class="responsive-img" src="images/infernape2.jpg">
+              <div class="caption center-align">
+                <h5 class="light black-text">Infernape.</h5>
+              </div>
+            </li>
+            <li>
+              <img class="responsive-img" src="images/infernape3.jpg">
+              <div class="caption center-align">
+                <h5 class="light black-text">Infernape.</h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <!-- Forth History page -->
+  <div class="container bkgr-img2">
+    <div class="row container" id="p4">
+      <div class="col s12 m5">
+        <div class="card-panel grey lighten-2 center">
+          <img id="founder" class="materialboxed center" data-caption="Satoshi Tajiri" src="images/founder.jpg" alt="founder of Pokemon cards and game Satoshi Tajiri">
+        </div>
+      </div>
+      <div class="col s12 m7">
+        <div class="card-panel grey lighten-2">
+          <h3>History of Pokemon</h3>
+          <p>Creator of popular Pokemon game Satoshi Tajiri loved to look for, study and play with bugs. He was known as Dr.
+            Bug among his peers. In his teenage years he became fascinated with arcade games and even skipped technical school
+            for a chance to spend time in arcade, which infuriated his parents. When he turn 16 he won a contest sponsored
+            by Nintendo soon after he started a magazine Game Freak. His obsession with game progressed into him learning
+            to program. Satoshi pitched his idea of Pokemon to Nintendo and 6 years later the game was born.</p>
+          <a href="https://bulbapedia.bulbagarden.net/wiki/History_of_Pok%C3%A9mon" class="btn">Read more here</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <!-- Contact page -->
+  <div class="container" id="p5">
+    <h4>Subscribe to my email list</h4>
+    <form>
+      <div class="input-field">
+        <input type="text" id="name">
+        <label class="active" for="name">Name</label>
+      </div>
+      <div class="input-field">
+        <input type="text" id="email" class="validate">
+        <label class="active" for="email">email</label>
+      </div>
+      <div class="input-field">
+        <h6>Drop me a note</h6>
+        <textarea type="text" id="textarea" class="materialize-textarea"></textarea>
+        <label class="active" for="textarea">text area</label>
+      </div>
+    </form>
+  </div>
+  <div class="fixed-action-btn">
+    <a href="#" class="btn-floating btn-large" id="icon">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li>
+        <a href="#p1" class="btn-floating green darken-3 btn-large">
+          <i class="fas fa-home"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="btn-floating blue darken-3 btn-large">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="btn-floating orange darken-3 btn-large">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="btn-floating purple darken-3 btn-large">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <h5>About Me</h5>
+          <p>I've been a pokemon trainer since 10 years old. My goal is to become the ultimate Pokémon trainer, a title that
+            is obtained by defeating the Elite Four.</p>
+        </div>
+        <div class="col s12 m4 offset-m2">
+          <h5 class="grey-text text-lighten-3">Links</h5>
+          <ul>
+            <li>
+              <a href="https://www.pokemon.com/" class="white-text">Official Pokemon site</a>
+            </li>
+            <li>
+              <a href="https://sm2.pokemontcg.com/assets/pdfs/en-us/SM2_Web_Rulebook.pdf" class="white-text">Pokemon rulebook</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer copyright grey darken-2">
       <div class="container">
-        <div class="space" id="p1"> 
-          <div class="row">
-            <h4 class="center" id="firstpagetext">I will catch them all</h4>
-            <div class="col s12 m4 offset-m4">
-              <div class="card-panel grey lighten-2">
-                <img id="girl" src="images/Hilda.jpg" alt="girl pokemon trainer">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <!-- This is second page with my Pokedex cards -->
-
-      <div class="bkgr-img">
-        <div class="container">
-          <div class="card row" id="p2">
-            <div class="col s12 m4">
-              <div class="card grey lighten-2">
-                <div class="card-image">
-                  <img id="poke-cards" class="materialboxed change" src="images/pokemon-card-back_600.jpg">
-                  <span class="card-title back-text" id="poke-name"></span>
-                  <ul class="pagination">
-                    <li id="p251" class="active grey pag"><a href="#!">1</a></li>
-                    <li id="p730" class="waves-effect pag"><a href="#!">2</a></li>
-                    <li id="p392" class="waves-effect pag"><a href="#!">3</a></li>
-                  </ul>
-                </div>               
-              </div>
-            </div>
-
-            <div class="col s12 m6 grey lighten-2 card-content">             
-              <table class="responsive-table offset-m2">
-                <thead>
-                  <tr>
-                    <th class="active">Statistic</th>
-                    <th class="change active">Value</th>
-                  </tr>
-                </thead>
-        
-                <tbody>
-                  <tr>
-                    <td>HP :</td>
-                    <td class="change" id="poke-hp"></td>
-                  </tr>
-                  <tr>
-                    <td>Attack points :</td>
-                    <td class="change" id="poke-attack"></td>
-                  </tr>
-                  <tr>
-                    <td>Defense points :</td>
-                    <td class="change" id="poke-defence"></td>
-                  </tr>
-                  <tr>
-                    <td>Abilities :</td>
-                    <td class="change" id="poke-abilities"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <a id="p635"> <button class="btn grey darken-3 waves-effect center waves-light">My Dragon</button> </a>
-            <img  id="p635i" alt="">
-          </div>
-        </div>
-      </div>
-      <br> <br> <br>
-    
-      <!-- Third page Pokemon Evolution -->
-    <div class="row container" id="p3">
-      <div class="col s12 m4">
-        <div class="card-panel grey lighten-2 z-depth-3">
-          <div class="slider card">
-            <ul class="slides card-title">
-              <li>
-                <img class="responsive-img" src="images/Celebi.jpg">
-                <div class="caption center-align">
-                  <h5 class="light black-text">Celebi.</h5>
-                </div>
-              </li>
-              <li>
-                <img class="responsive-img" src="images/celebi2.jpg"> 
-                <div class="caption center-align">
-                  <h5 class="light black-text">Celebi.</h5>
-                </div>
-              </li>
-              <li>
-                <img class="responsive-img" src="images/celebi3.jpg"> 
-                <div class="caption center-align">
-                  <h5 class="light black-text">Celebi</h5>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m4">
-        <div class="card-panel grey lighten-2 z-depth-3">
-          <div class="slider card">
-            <ul class="slides card-title">
-              <li>
-                <img class="responsive-img" src="images/primarinaS.jpg"> 
-                <div class="caption center-align">
-                  <h5 class="light black-text">Primarina.</h5>
-                </div>
-              </li>
-              <li>
-                <img class="responsive-img" src="images/primarinaM.jpg"> 
-                <div class="caption center-align">
-                  <h5 class="light black-text">Primarina.</h5>
-                </div>
-              </li>
-              <li>
-                <img class="responsive-img" src="images/primarina.jpg"> 
-                <div class="caption center-align">
-                  <h5 class="light black-text">Primarina.</h5>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m4">
-        <div class="card-panel grey lighten-2 z-depth-3">
-          <div class="slider card">
-            <ul class="slides card-title">
-              <li>
-                <img class="responsive-img" src="images/infernape1.jpg"> 
-                <div class="caption center-align">
-                  <h5 class="light black-text">Infernape.</h5>
-                </div>
-              </li>
-              <li>
-                <img class="responsive-img" src="images/infernape2.jpg"> 
-                <div class="caption center-align">
-                  <h5 class="light black-text">Infernape.</h5>
-                </div>
-              </li>
-              <li>
-                <img class="responsive-img" src="images/infernape3.jpg"> 
-                <div class="caption center-align">
-                  <h5 class="light black-text">Infernape.</h5>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
+        copyright &copy; 2018
+        <a href="" class="grey-text text-lighten-3 right">Terms & Conditions</a>
       </div>
     </div>
-      
-        <br> <br> <br>
+  </footer>
 
-        <!-- Forth History page -->
-    <div class="container bkgr-img2">
-      <div class="row container" id="p4">
-        <div class="col s12 m5">
-          <div class="card-panel grey lighten-2 center">
-            <img id="founder" class="materialboxed center" data-caption="Satoshi Tajiri" src="images/founder.jpg" alt="founder of Pokemon cards and game Satoshi Tajiri">
-          </div>
-        </div>
-        <div class="col s12 m7">
-          <div class="card-panel grey lighten-2">
-            <h3>History of Pokemon</h3>
-            <p>Creator of popular Pokemon game Satoshi Tajiri loved to look for, study and play with bugs. He was known as Dr. Bug among his peers. In his  teenage years he became fascinated with arcade games and even skipped technical school for a chance to spend time in arcade, which infuriated his parents. When he turn 16 he won a contest sponsored by Nintendo soon after he started a magazine Game Freak. His obsession with game progressed into him learning to program. Satoshi pitched his idea of Pokemon to Nintendo and 6 years later the game was born.</p>
-            <a href="https://bulbapedia.bulbagarden.net/wiki/History_of_Pok%C3%A9mon" class="btn">Read more here</a>
-          </div>
-        </div>
-      </div>
-    </div>
-        <br> <br> <br>
 
-        <!-- Contact page -->
-    <div class="container" id="p5">
-      <h4>Subscribe to my email list</h4>
-      <form>
-        <div class="input-field">
-          <input type="text" id="name">
-          <label class="active" for="name">Name</label>
-        </div>
-        <div class="input-field">
-          <input type="text" id="email" class="validate">
-          <label class="active" for="email">email</label>
-        </div>
-        <div class="input-field">
-          <h6>Drop me a note</h6>
-          <textarea type="text" id="textarea" class="materialize-textarea"></textarea>
-          <label class="active" for="textarea">text area</label>
-        </div>
-      </form> 
-    </div>
-    <div class="fixed-action-btn">
-        <a href="#" class="btn-floating btn-large" id="icon"><i class="large material-icons">mode_edit</i></a>
-        <ul>
-          <li><a href="#p1" class="btn-floating green darken-3 btn-large"><i class="fas fa-home"></i></a></li>
-          <li><a href="#" class="btn-floating blue darken-3 btn-large"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="#" class="btn-floating orange darken-3 btn-large"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="#" class="btn-floating purple darken-3 btn-large"><i class="fab fa-instagram"></i></a></li>
-        </ul>
-      </div>
-        <footer class="page-footer grey darken-3">
-          <div class="container">
-            <div class="row">
-              <div class="col s12 m6">
-                <h5>About Me</h5>
-                <p>I've been a pokemon trainer since 10 years old. My goal is to become the ultimate Pokémon trainer, a title that is obtained by defeating the Elite Four.</p>
-              </div>
-              <div class="col s12 m4 offset-m2">
-                <h5 class="grey-text text-lighten-3">Links</h5>
-                <ul>
-                  <li>
-                    <a href="https://www.pokemon.com/" class="white-text">Official Pokemon site</a>
-                  </li>
-                  <li>
-                    <a href="https://sm2.pokemontcg.com/assets/pdfs/en-us/SM2_Web_Rulebook.pdf" class="white-text">Pokemon rulebook</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            
-          </div>  
-          <div class="footer copyright grey darken-2">
-            <div class="container">
-              copyright &copy; 2018
-              <a href="" class="grey-text text-lighten-3 right">Terms & Conditions</a>
-            </div>
-          </div>
-        </footer>
-        
 
-      
 
-      <!--JavaScript at end of body for optimized loading-->
-      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-      <script src="js/main.js"></script>
-   
-    </body>
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script src="js/main.js"></script>
 
-   
-  </html>
+</body>
+
+
+</html>

@@ -1,8 +1,7 @@
 @import url(./pokemon-font/Pokemon\ Hollow.ttf);
-
-@font-face{
-font-family: 'myfonts';
-src: url(../pokemon-font/Pokemon-Solid.ttf)
+@font-face {
+  font-family: 'myfonts';
+  src: url(../pokemon-font/Pokemon-Solid.ttf)
 }
 
 %myimages-size {
@@ -12,7 +11,7 @@ src: url(../pokemon-font/Pokemon-Solid.ttf)
 
 %myfont-size {
   font-size: 1.4em;
-} 
+}
 
 %myblue-text {
   color: rgb(19, 19, 56);
@@ -22,12 +21,13 @@ src: url(../pokemon-font/Pokemon-Solid.ttf)
   background-color: rgb(105, 17, 2);
 }
 
-body{
+body {
   @extend %mybackground-color;
   margin: 0;
   font-family: 'Wendy One', sans-serif;
 }
-.hero{
+
+.hero {
   width: 100vw;
   height: 40vh;
   display: flex;
@@ -41,7 +41,7 @@ body{
   background-attachment: fixed;
 }
 
-.hero h1{
+.hero h1 {
   font-size: 5em;
   margin-top: 0;
   margin-bottom: 0.5em;
@@ -49,22 +49,23 @@ body{
   font-weight: bold;
 }
 
-.hero h3, #firstpagetext{
+.hero h3,
+#firstpagetext {
   @extend %myfont-size;
   font-family: 'myfonts';
   @extend %myblue-text;
 }
 
-.bg-color{
-  background-color: rgb(41,41,41);
+.bg-color {
+  background-color: rgb(41, 41, 41);
 }
 
-h1{
+h1 {
   @extend %myblue-text;
   font-family: 'myfonts';
 }
 
-.bkgr-img{
+.bkgr-img {
   width: 100vw;
   height: 80vh;
   display: flex;
@@ -78,7 +79,7 @@ h1{
   background-attachment: fixed;
 }
 
-.bkgr-img2{
+.bkgr-img2 {
   width: 100vw;
   height: 80vh;
   display: flex;
@@ -92,43 +93,45 @@ h1{
   background-attachment: fixed;
 }
 
-.nav-font{
+.nav-font {
   @extend %myfont-size;
 }
 
-h1{
+h1 {
   font-family: 'myfonts';
 }
 
-#heroimg{
+#heroimg {
   width: 100%;
 }
+
 // .container{
 //   height: 500px;
 // }
-
-#poke-cards, #girl{
+#poke-cards,
+#girl {
   @extend %myimages-size;
 }
 
-.trimg{
+.trimg {
   height: 300px;
-
 }
 
-.space{
+.space {
   @extend %mybackground-color;
 }
 
-#founder{
+#founder {
   height: 350px;
-  width: 230px; 
+  width: 230px;
 }
 
-footer{
+footer {
   font-family: 'Roboto', sans-serif;
 }
 
-#icon{
+#icon {
   @extend %mybackground-color;
-};
+}
+
+;
