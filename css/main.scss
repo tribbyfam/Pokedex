@@ -21,6 +21,10 @@
   background-color: rgb(105, 17, 2);
 }
 
+.img-backgr {
+  @extend %mybackground-color;
+}
+
 body {
   @extend %mybackground-color;
   margin: 0;
@@ -108,9 +112,13 @@ h1 {
 // .container{
 //   height: 500px;
 // }
-#poke-cards,
-#girl {
+#poke-cards {
   @extend %myimages-size;
+}
+
+#girl {
+  height: 30vh;
+  width: 20vw;
 }
 
 .trimg {
