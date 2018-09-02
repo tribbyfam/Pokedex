@@ -1,4 +1,5 @@
 @import url(./pokemon-font/Pokemon\ Hollow.ttf);
+
 @font-face {
   font-family: 'myfonts';
   src: url(../pokemon-font/Pokemon-Solid.ttf)
@@ -14,11 +15,15 @@
 }
 
 %myblue-text {
-  color: rgb(19, 19, 56);
+  color: rgb(109, 27, 112);
+}
+
+%mylight-background {
+  background-color: rgb(245, 198, 245)
 }
 
 %mybackground-color {
-  background-color: rgb(105, 17, 2);
+  background-color: rgb(109, 27, 112);
 }
 
 .img-backgr {
@@ -54,14 +59,11 @@ body {
 }
 
 .hero h3,
-#firstpagetext {
+#firstpagetext,
+  {
   @extend %myfont-size;
   font-family: 'myfonts';
   @extend %myblue-text;
-}
-
-.bg-color {
-  background-color: rgb(41, 41, 41);
 }
 
 h1 {
@@ -98,7 +100,7 @@ h1 {
 }
 
 .nav-font {
-  @extend %myfont-size;
+  font-size: 1.6em;
 }
 
 h1 {
@@ -109,16 +111,14 @@ h1 {
   width: 100%;
 }
 
-// .container{
-//   height: 500px;
-// }
 #poke-cards {
   @extend %myimages-size;
 }
 
 #girl {
-  height: 30vh;
-  width: 20vw;
+  height: 70vh;
+  width: 30vw;
+  @extend %mybackground-color;
 }
 
 .trimg {
@@ -142,4 +142,40 @@ footer {
   @extend %mybackground-color;
 }
 
-;
+#p2,
+#footer {
+  @extend %mybackground-color;
+}
+
+#p2,
+#cards {
+  margin: 10px !important;
+  padding: 10px !important;
+}
+
+#footer2,
+.img_color {
+  @extend %mybackground-color;
+  color: white;
+}
+
+.active {
+  @extend %mybackground-color;
+  color: white;
+}
+
+#cards,
+#card_img,
+.panel_cards {
+  @extend %mylight-background;
+}
+
+.card-panel .slider {
+  height: 400px !important;
+}
+
+#more_btn {
+  @extend %mybackground-color;
+  display: block;
+  width: 100%;
+}

@@ -10,34 +10,40 @@
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
-
-  <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
+<!-- Navigation -->
+
 <body>
-  <nav class="nav-fixed grey darken-3 transparent">
-    <div class="container nav-wrapper nav-transparent">
-      <a href="#!" class="brand-logo">
-        <img src="images/logo-pokemon-79x45.png">
-      </a>
-      <ul class="right hide-on-med-and-down">
-        <li class="active">Home</li>
-        <li>
-          <a href="#p2">my Deck</a>
-        </li>
-        <li>
-          <a href="#p3">Poke Evolve</a>
-        </li>
-        <li>
-          <a href="#p4">History</a>
-        </li>
-        <li>
-          <a href="#p5">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <header class="main-header">
+    <nav class="transparent">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center"><img src="../poke-deck/images/logo-pokemon-79x45.png" alt="pokemon sign"></a>
+          <a href="#" data-activates="mobile-nav" class="button-collapse">
+            <i class="fa fa-bars"></i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a class="active-link purple-text text-lighten-3" href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="solutions.html" class="pink-text text-lighten-5">My Deck</a>
+            </li>
+            <li>
+              <a href="signup.html" class="pink-text text-lighten-5">Poke Evolve</a>
+            </li>
+            <li>
+              <a href="signup.html" class="pink-text text-lighten-5">History</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
   <section class="slider hero" id="p1">
     <div class="hero-inner">
       <h1>Blue A. Kentchum's
@@ -48,26 +54,12 @@
   <br>
   <br>
 
-  <!-- GRID 6 BY 6 FOR GIRL AND NAME -->
-  <!-- <div class="container"> -->
-  <!-- <h4>Blue A. Khaleesi</h4> -->
-  <!-- <div class="container">
-          <div>
-            <div class="container">
-              <div class="carousel carousel-slider">
-                <a class="carousel-item" href="#one!"><img class="trimg" src="../poke-deck/images/fake-trainer.jpg"></a>
-                <a class="carousel-item trimg" href="#two!"><img class="trimg" src="../poke-deck/images/Hilda.jpg"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
   <div class="container" id="p1">
     <div class="row">
-      <h4 class="center white-text">I will catch them all</h4>
+      <h4 class="center pink-text text-lighten-5">I will catch them all</h4>
       <div class="col s12 m4 offset-m4">
         <div class="card-panel img-backgr">
-          <img id="girl" src="images/pokemon-trainerN.png" alt="girl pokemon trainer">
+          <img id="girl" src="images/trainer-poke.png" alt="girl pokemon trainer">
         </div>
       </div>
     </div>
@@ -79,18 +71,18 @@
     <div class="container">
       <div class="card row" id="p2">
         <div class="col s12 m4">
-          <div class="card grey lighten-2">
+          <div class="card" id="card_img">
             <div class="card-image">
               <img id="poke-cards" class="materialboxed change" src="images/pokemon-card-back_600.jpg">
               <span class="card-title back-text" id="poke-name"></span>
               <ul class="pagination">
-                <li id="p251" class="active grey pag">
+                <li id="p251" class="active">
                   <a href="#!">1</a>
                 </li>
-                <li id="p730" class="waves-effect pag">
+                <li id="p730" class="waves-effect">
                   <a href="#!">2</a>
                 </li>
-                <li id="p392" class="waves-effect pag">
+                <li id="p392" class="waves-effect">
                   <a href="#!">3</a>
                 </li>
               </ul>
@@ -98,7 +90,7 @@
           </div>
         </div>
 
-        <div class="col s12 m6 grey lighten-2 card-content">
+        <div class="col s12 m7 offset-m1 card-content" id="cards">
           <table class="responsive-table offset-m2">
             <thead>
               <tr>
@@ -127,9 +119,6 @@
             </tbody>
           </table>
         </div>
-        <a id="p635">
-          <button class="btn grey darken-3 waves-effect center waves-light">My Dragon</button>
-        </a>
         <img id="p635i" alt="">
       </div>
     </div>
@@ -139,168 +128,132 @@
   <br>
 
   <!-- Third page Pokemon Evolution -->
-  <div class="row container" id="p3">
-    <div class="col s12 m4">
-      <div class="card-panel grey lighten-2 z-depth-3">
-        <div class="slider card">
-          <ul class="slides card-title">
-            <li>
-              <img class="responsive-img" src="images/Celebi.jpg">
-              <div class="caption center-align">
-                <h5 class="light black-text">Celebi.</h5>
-              </div>
-            </li>
-            <li>
-              <img class="responsive-img" src="images/celebi2.jpg">
-              <div class="caption center-align">
-                <h5 class="light black-text">Celebi.</h5>
-              </div>
-            </li>
-            <li>
-              <img class="responsive-img" src="images/celebi3.jpg">
-              <div class="caption center-align">
-                <h5 class="light black-text">Celebi</h5>
-              </div>
-            </li>
-          </ul>
+  <section class="section section-evolution">
+    <div class="row container" id="p3">
+      <div class="col s12 m4">
+        <div class="card-panel z-depth-3 panel_cards">
+          <div class="slider card">
+            <ul class="slides card-title">
+              <li>
+                <img class="responsive-img" src="images/Celebi.jpg">
+                <div class="caption center-align">
+                  <h5 class="light purple-text text-darken-3">Celebi.</h5>
+                </div>
+              </li>
+              <li>
+                <img class="responsive-img img_color" src="images/celebi2.jpg">
+                <div class="caption center-align">
+                  <h5 class="light purple-text text-darken-3">Celebi.</h5>
+                </div>
+              </li>
+              <li>
+                <img class="responsive-img" src="images/celebi3.jpg">
+                <div class="caption center-align">
+                  <h5 class="light pink-text text-lighten-5">Celebi</h5>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card-panel z-depth-3 panel_cards">
+          <div class="slider card">
+            <ul class="slides card-title">
+              <li>
+                <img src="images/primarinaS.jpg" class="responsive-img">
+                <div class="caption center-align">
+                  <h5 class="light pink-text text-lighten-5">Primarina.</h5>
+                </div>
+              </li>
+              <li>
+                <img class="responsive-img" src="images/primarinaM.jpg">
+                <div class="caption center-align">
+                  <h5 class="light pink-text text-lighten-5">Primarina.</h5>
+                </div>
+              </li>
+              <li>
+                <img class="responsive-img" src="images/primarina.jpg">
+                <div class="caption center-align">
+                  <h5 class="light purple-text text-darken-3">Primarina.</h5>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card-panel panel_cards z-depth-3">
+          <div class="slider card">
+            <ul class="slides card-title">
+              <li>
+                <img class="responsive-img" src="images/infernape1.jpg">
+                <div class="caption center-align">
+                  <h5 class="light purple-text text-darken-3">Infernape.</h5>
+                </div>
+              </li>
+              <li>
+                <img class="responsive-img" src="images/infernape2.jpg">
+                <div class="caption center-align">
+                  <h5 class="light purple-text text-darken-3">Infernape.</h5>
+                </div>
+              </li>
+              <li>
+                <img class="responsive-img" src="images/infernape3.jpg">
+                <div class="caption center-align">
+                  <h5 class="light pink-text text-lighten-5">Infernape.</h5>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col s12 m4">
-      <div class="card-panel grey lighten-2 z-depth-3">
-        <div class="slider card">
-          <ul class="slides card-title">
-            <li>
-              <img class="responsive-img" src="images/primarinaS.jpg">
-              <div class="caption center-align">
-                <h5 class="light black-text">Primarina.</h5>
-              </div>
-            </li>
-            <li>
-              <img class="responsive-img" src="images/primarinaM.jpg">
-              <div class="caption center-align">
-                <h5 class="light black-text">Primarina.</h5>
-              </div>
-            </li>
-            <li>
-              <img class="responsive-img" src="images/primarina.jpg">
-              <div class="caption center-align">
-                <h5 class="light black-text">Primarina.</h5>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m4">
-      <div class="card-panel grey lighten-2 z-depth-3">
-        <div class="slider card">
-          <ul class="slides card-title">
-            <li>
-              <img class="responsive-img" src="images/infernape1.jpg">
-              <div class="caption center-align">
-                <h5 class="light black-text">Infernape.</h5>
-              </div>
-            </li>
-            <li>
-              <img class="responsive-img" src="images/infernape2.jpg">
-              <div class="caption center-align">
-                <h5 class="light black-text">Infernape.</h5>
-              </div>
-            </li>
-            <li>
-              <img class="responsive-img" src="images/infernape3.jpg">
-              <div class="caption center-align">
-                <h5 class="light black-text">Infernape.</h5>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+  </section>
 
   <br>
   <br>
   <br>
 
   <!-- Forth History page -->
-  <div class="container bkgr-img2">
-    <div class="row container" id="p4">
-      <div class="col s12 m5">
-        <div class="card-panel grey lighten-2 center">
-          <img id="founder" class="materialboxed center" data-caption="Satoshi Tajiri" src="images/founder.jpg" alt="founder of Pokemon cards and game Satoshi Tajiri">
+  <section class="section section-history">
+    <div class="container bkgr-img2">
+      <div class="row container" id="p4">
+        <div class="col s12 m5">
+          <div class="card-panel panel_cards center">
+            <img id="founder" class="materialboxed center" data-caption="Satoshi Tajiri" src="images/founder.jpg" alt="founder of Pokemon cards and game Satoshi Tajiri">
+          </div>
         </div>
-      </div>
-      <div class="col s12 m7">
-        <div class="card-panel grey lighten-2">
-          <h3>History of Pokemon</h3>
-          <p>Creator of popular Pokemon game Satoshi Tajiri loved to look for, study and play with bugs. He was known as Dr.
-            Bug among his peers. In his teenage years he became fascinated with arcade games and even skipped technical school
-            for a chance to spend time in arcade, which infuriated his parents. When he turn 16 he won a contest sponsored
-            by Nintendo soon after he started a magazine Game Freak. His obsession with game progressed into him learning
-            to program. Satoshi pitched his idea of Pokemon to Nintendo and 6 years later the game was born.</p>
-          <a href="https://bulbapedia.bulbagarden.net/wiki/History_of_Pok%C3%A9mon" class="btn">Read more here</a>
+        <div class="col s12 m7">
+          <div class="card-panel panel_cards">
+            <h3>History of Pokemon</h3>
+            <p>Creator of popular Pokemon game Satoshi Tajiri loved to look for, study and play with bugs. He was known
+              as Dr.
+              Bug among his peers. In his teenage years he became fascinated with arcade games and even skipped
+              technical
+              school
+              for a chance to spend time in arcade, which infuriated his parents. When he turn 16 he won a contest
+              sponsored
+              by Nintendo soon after he started a magazine Game Freak. His obsession with game progressed into him
+              learning
+              to program. Satoshi pitched his idea of Pokemon to Nintendo and 6 years later the game was born.</p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/History_of_Pok%C3%A9mon" class="btn btn-large" id="more_btn">Read
+              more here</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <br>
-  <br>
+  </section>
   <br>
 
-  <!-- Contact page -->
-  <div class="container" id="p5">
-    <h4>Subscribe to my email list</h4>
-    <form>
-      <div class="input-field">
-        <input type="text" id="name">
-        <label class="active" for="name">Name</label>
-      </div>
-      <div class="input-field">
-        <input type="text" id="email" class="validate">
-        <label class="active" for="email">email</label>
-      </div>
-      <div class="input-field">
-        <h6>Drop me a note</h6>
-        <textarea type="text" id="textarea" class="materialize-textarea"></textarea>
-        <label class="active" for="textarea">text area</label>
-      </div>
-    </form>
-  </div>
-  <div class="fixed-action-btn">
-    <a href="#" class="btn-floating btn-large" id="icon">
-      <i class="large material-icons">mode_edit</i>
-    </a>
-    <ul>
-      <li>
-        <a href="#p1" class="btn-floating green darken-3 btn-large">
-          <i class="fas fa-home"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="btn-floating blue darken-3 btn-large">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="btn-floating orange darken-3 btn-large">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="btn-floating purple darken-3 btn-large">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <footer class="page-footer grey darken-3">
+  <!-- Footer -->
+  <footer class="page-footer" id="footer">
     <div class="container">
       <div class="row">
         <div class="col s12 m6">
           <h5>About Me</h5>
-          <p>I've been a pokemon trainer since 10 years old. My goal is to become the ultimate Pokémon trainer, a title that
+          <p>I've been a pokemon trainer since 10 years old. My goal is to become the ultimate Pokémon trainer, a title
+            that
             is obtained by defeating the Elite Four.</p>
         </div>
         <div class="col s12 m4 offset-m2">
@@ -310,14 +263,15 @@
               <a href="https://www.pokemon.com/" class="white-text">Official Pokemon site</a>
             </li>
             <li>
-              <a href="https://sm2.pokemontcg.com/assets/pdfs/en-us/SM2_Web_Rulebook.pdf" class="white-text">Pokemon rulebook</a>
+              <a href="https://sm2.pokemontcg.com/assets/pdfs/en-us/SM2_Web_Rulebook.pdf" class="white-text">Pokemon
+                rulebook</a>
             </li>
           </ul>
         </div>
       </div>
 
     </div>
-    <div class="footer copyright grey darken-2">
+    <div class="footer copyright" id="footer2">
       <div class="container">
         copyright &copy; 2018
         <a href="" class="grey-text text-lighten-3 right">Terms & Conditions</a>

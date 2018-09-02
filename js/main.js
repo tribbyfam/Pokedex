@@ -158,14 +158,6 @@ axios.get('https://fizal.me/pokeapi/api/730.json')
     });
 
 
-    // let event = document.getElementById("p730");
-
-    // for(let i=0; i<btns.length; i++){
-    //   event[i].addEventListener("click",function(){
-    //     let current = document.getElementsByClassName("active");
-    //     current[0].className = current[0].className += " active";
-    //   });
-    // }
 
     document.getElementById("p730").addEventListener("click", function () {
       let event = document.getElementById("p730");
@@ -210,14 +202,7 @@ axios.get('https://fizal.me/pokeapi/api/392.json')
       trainer.get('infernape').grab();
     });
 
-    // let event = document.getElementById("p392");
 
-    // for(let i=0; i<btns.length; i++){
-    //   event[i].addEventListener("click",function(){
-    //     let current = document.getElementsByClassName("active");
-    //     current[0].className = current[0].className += " active";
-    //   });
-    // }
 
     document.getElementById("p392").addEventListener("click", function () {
       let event = document.getElementById("p392");
