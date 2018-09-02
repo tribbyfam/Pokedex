@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
+// Start here
 
 class Trainer {
   constructor(firstName = "Blue", lastName = "Catchum") {
@@ -64,7 +64,6 @@ class Pokemon {
 
     pokeImages.setAttribute("src", this.picture)
 
-
     pokeName.innerHTL = `${this.name}`;
     pokeHpStats.innerHTML = `${this.hp}`;
     pokeAttackStats.innerHTML = `${this.attack}`;
@@ -101,14 +100,7 @@ axios.get('https://fizal.me/pokeapi/api/251.json')
       trainer.get('celebi').grab();
     });
 
-    // let event = document.getElementById("p251");
 
-    // for(let i=0; i<btns.length; i++){
-    //   event[i].addEventListener("click",function(){
-    //     let current = document.getElementsByClassName("active");
-    //     current[0].className = current[0].className += " active";
-    //   });
-    // }
 
     document.getElementById("p251").addEventListener("click", function () {
       let event = document.getElementById("p251");
