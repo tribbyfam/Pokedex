@@ -39,6 +39,7 @@ class Trainer {
   add(pokemon) {
     this.data.push(pokemon)
   }
+
   get(name) {
     return this.data.find((element) => {
       return element.name == name
