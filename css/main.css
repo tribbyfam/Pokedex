@@ -2,18 +2,30 @@
 @font-face {
   font-family: 'myfonts';
   src: url(../pokemon-font/Pokemon-Solid.ttf); }
-#poke-cards, #girl {
+#poke-cards {
   height: 200px;
   width: 200px; }
 
-.hero h3, #firstpagetext, .nav-font {
+.hero h3,
+#firstpagetext {
   font-size: 1.4em; }
 
-.hero h1, .hero h3, #firstpagetext, h1 {
-  color: #131338; }
+.hero h1, .hero h3,
+#firstpagetext, h1 {
+  color: #072851; }
 
-body, .space, #icon {
-  background-color: #691102; }
+.nav-font, #slogan {
+  color: #f5c6f5; }
+
+#cards,
+#card_img,
+.panel_cards {
+  background-color: #f5c6f5; }
+
+.img-backgr, body, #girl, .space, #icon, #p2,
+#footer, #footer2,
+.img_color, .active, #more_btn {
+  background-color: #072851; }
 
 body {
   margin: 0;
@@ -38,18 +50,16 @@ body {
   margin-bottom: 0.5em;
   font-weight: bold; }
 
-.hero h3, #firstpagetext {
+.hero h3,
+#firstpagetext {
   font-family: 'myfonts'; }
-
-.bg-color {
-  background-color: #292929; }
 
 h1 {
   font-family: 'myfonts'; }
 
 .bkgr-img {
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,14 +83,24 @@ h1 {
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
+.nav-font {
+  font-size: 1.4em; }
+
 h1 {
   font-family: 'myfonts'; }
 
 #heroimg {
   width: 100%; }
 
+#girl {
+  height: 70vh;
+  width: 30vw; }
+
 .trimg {
   height: 300px; }
+
+.section-history {
+  max-height: 650px; }
 
 #founder {
   height: 350px;
@@ -88,5 +108,30 @@ h1 {
 
 footer {
   font-family: 'Roboto', sans-serif; }
+
+#p2,
+#cards {
+  margin: 10px !important;
+  padding: 10px !important; }
+
+#footer2,
+.img_color {
+  color: white; }
+
+.active {
+  color: white; }
+
+#p251 a {
+  color: white; }
+
+.poke_btn:focus {
+  color: white; }
+
+.card-panel .slider {
+  height: 400px !important; }
+
+#more_btn {
+  display: block;
+  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
